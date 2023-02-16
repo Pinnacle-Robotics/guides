@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Pinnacle Robotics Guides',
+  tagline: 'STEM projects and guides that are written by our members!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Pinnacle Robotics', // Usually your GitHub org/user name.
+  projectName: 'Guides', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -64,21 +64,39 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Pinnacle Robotics Guides',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Pinnacle Robotics logo without wording',
+          src: 'img/logo.png'
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Navigator',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Programming Guides',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Arduino Guides',
+          },
+          {
+            href: 'https://pinnaclerobotics.org',
+            label: 'Back to Pinnacle Robotics',
+            position: 'right',
+
+
+          },
+          {
+            href: 'https://github.com/pinnacle-robotics/guides',
             label: 'GitHub',
             position: 'right',
           },
@@ -127,7 +145,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Pinnacle Robotics. Developed by Sang Bui. 2023 Capstone Project.`,
       },
       prism: {
         theme: lightCodeTheme,
